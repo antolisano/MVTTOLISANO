@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado Familiar:</title>
+</head>
+<body>
+    <strong>FAMILIARES DE ALDANA TOLISANO:</strong>
+   <br>
+   {%for Familia in listadefamiliares%}
+   <br>
+     NOMBRE Y APELLIDO: <em>{{Familia.nombreyapellido}}  </em> /// FECHA DE NACIMIENTO: <em>{{Familia.fechanacimiento}} </em>  /// EDAD: <em>{{Familia.edad}}</em>
+     <br>
+
+    {%endfor%}
+</body>
+</html>
